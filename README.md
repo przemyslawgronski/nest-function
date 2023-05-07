@@ -219,7 +219,9 @@ Uncaught SyntaxError: Unexpected string
 3. Cannot init leaf more than once
 
 ```javascript
-nest({obj:y, keys:['a','b'], leaf:'y'})
+const y = {};
+
+nest({obj:y, keys:['a','b'], leaf:'y'});
 
 {
     "a": {
@@ -227,7 +229,7 @@ nest({obj:y, keys:['a','b'], leaf:'y'})
     }
 }
 
-nest({obj:y, keys:['a','b'], leaf:'y'})
+nest({obj:y, keys:['a','b'], leaf:'y'});
 ```
 
 ```
